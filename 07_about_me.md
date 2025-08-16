@@ -2,7 +2,7 @@
 
 **Name:** Joshua M. Pateña  
 **Course/Year:** Bachelors of Science in Information System  3rd Year  
-**Fun Fact:** I can solve a Rubik’s cube in under one minute.  
+**Fun Fact:** I am afraid in the dark   
 
 ---
 
