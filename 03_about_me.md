@@ -2,7 +2,7 @@
 
 **Name:** Joshua M. Pateña  
 **Course/Year:** Bachelors of Science in Information System  3rd Year  
-**Fun Fact:** I am afraid of the dark   
+**Fun Fact:** I am afraid of the dark and of the heights  
 
 ---
 
