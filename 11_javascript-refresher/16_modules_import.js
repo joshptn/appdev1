@@ -1,4 +1,4 @@
-import greet, { informations } from "./15_modules_export.js";
+import greet, { information } from "./15_modules_export.js";
 
 console.log(greet())
-console.log(informations)
+console.log(information)
