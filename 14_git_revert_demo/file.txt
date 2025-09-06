@@ -1,2 +1,5 @@
 Line 1
 Line 2
+
+Realization: What did you notice about the file and commit history after revert?
+answer: it cleared the changes but stored the previous commit in the history
