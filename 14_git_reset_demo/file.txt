@@ -1,2 +1,5 @@
 Line 1
 Line 2
+
+Realization: What did you notice about the file and commit history after reset? 
+answer: its looked like it deleted the previous work or and all changes and are cleared out in the staging area.
