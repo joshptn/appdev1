@@ -1,0 +1,2 @@
+Realization: What did you notice about the commit history after switching from macro to micro commits?
+answer: in micro commit, it is easier to understand what is change later and it is better for reviewing the code and to track changes
