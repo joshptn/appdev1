@@ -1,0 +1,2 @@
+Realization: What did you notice about the commit history after rebase?
+answer: feature branch is now in a straight line, Add feature and Extend feature commits are now on top of main.
