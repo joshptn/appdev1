@@ -48,15 +48,40 @@ function Profile() {
   );
 }
 
+function AdminPanel() {
+  return (
+    <>
+      <h1 className='header'>This is the admin Panel</h1>
+    </>
+  );
+}
+
+function LoginForm() {
+  return (
+    <>
+      <h1 className='header'>This is the Login Form</h1>
+    </>
+  );
+}
+
+
+const isLoggedIn = false;
+let content;
+
+if (isLoggedIn) {
+  content = <AdminPanel />;
+} else {
+  content = <LoginForm />;
+}
 
 function App() {
   return (
-    <>
-      <AboutPage />
-    </>
+    <div>
+      {content}
+    </div>
   )
 }
 
-export default Profile
+export default App
 
 
