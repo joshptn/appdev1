@@ -7,29 +7,11 @@ const user = {
   imageSize: 150,
 };
 
-function MyButton() {
-  return (
-    <button>I'm a button</button>
-  );
-}
-
-function MyApp() {
-  return (
-    <div>
-      <h1>Welcome to my app</h1>
-      <MyButton />
-    </div>
-  );
-}
-
-function AboutPage() {
-  return (
-    <>
-      <h1 className='header'>About</h1>
-      <p>Hello there.<br />How do you do?</p>
-    </>
-  );
-}
+const hobbies = [
+  { title: 'Cycling', id: 1 },
+  { title: 'Hiking', id: 2 },
+  { title: 'Swimming', id: 3 },
+];
 
 function Profile() {
   return (
@@ -48,37 +30,20 @@ function Profile() {
   );
 }
 
-function AdminPanel() {
-  return (
-    <>
-      <h1 className='header'>This is the admin Panel</h1>
-    </>
-  );
-}
 
-function LoginForm() {
-  return (
-    <>
-      <h1 className='header'>This is the Login Form</h1>
-    </>
-  );
-}
-
-
-const isLoggedIn = false;
-let content;
-
-if (isLoggedIn) {
-  content = <AdminPanel />;
-} else {
-  content = <LoginForm />;
-}
 
 function App() {
-  return (
-    <div>
-      {content}
-    </div>
+   return (
+    <>
+      <div>
+        <Profile />
+      </div>
+      <ul>
+        {hobbies.map((hobby) => (
+          <li key={hobby.title}>{"I love " + hobby.title}</li>
+        ))}
+      </ul>
+    </>
   )
 }
 
