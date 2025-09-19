@@ -31,24 +31,23 @@ const hobbies = [
   { title: 'Swimming', id: 3 },
 ];
 
-function MyButton() {
-  const [count, setCount] = useState(0);
-
-  function handleClick() {
-    setCount(count + 1);
-  }
-
+function MyButton({ count, onClick }) {
   return (
-    <button onClick={handleClick}>
-      Clicked {count} times
-    </button>
+	<button onClick={onClick}>
+  	Clicked {count} times
+	</button>
   );
 }
 
 
-
-
 function App() {
+    const [count, setCount] = useState(0);
+
+    function handleClick() {
+    setCount(count + 1);
+    }
+
+
    return (
     <>
       <div>
@@ -60,9 +59,10 @@ function App() {
         ))}
       </ul>
       <div>
-        <MyButton />
+      <h1>Counters that update together</h1>
+      <MyButton count={count} onClick={handleClick} />
+      <MyButton count={count} onClick={handleClick} />
       </div>
-      
     </>
   )
 }
