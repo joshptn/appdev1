@@ -1,13 +1,12 @@
-function Cup({ guest }) {
-  return <h2>Tea cup for guest #{guest}</h2>;
-}
+import RootComponent from "./RootComponent";
+import { rootGreet } from "./RootModule"
 
-export default function TeaSet() {
+export default function App() {
+  rootGreet();
+
   return (
     <>
-      <Cup guest={1} />
-      <Cup guest={2} />
-      <Cup guest={3} />
+      <RootComponent />
     </>
   );
 }
