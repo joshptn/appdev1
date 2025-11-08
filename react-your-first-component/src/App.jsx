@@ -1,8 +1,7 @@
-export function Profile() {
+import Gallery from './Gallery.jsx';
+
+export default function App() {
   return (
-    <img
-      src="https://i.imgur.com/QIrZWGIs.jpg"
-      alt="Alan L. Hart"
-    />
+    <Gallery />
   );
 }
