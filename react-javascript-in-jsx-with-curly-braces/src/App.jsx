@@ -6,11 +6,6 @@ function App() {
 
   return (
     <>
-         <img
-      className="avatar"
-      src={avatar}
-      alt={description}
-    />
     <TodoList />
     </>
   )
