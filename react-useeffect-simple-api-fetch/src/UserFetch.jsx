@@ -13,7 +13,7 @@ function UserFetch() {
         setLoading(false);
       })
       .catch(error => {
-        console.error("Error fetching todos:", error);
+        console.error("Error fetching user data:", error);
         setLoading(false);
       });
   }, []); // empty array → run once on component mount
@@ -27,8 +27,8 @@ function UserFetch() {
         {user.map(u => (
           <li key={u.id}>
             <p>
-                <h4>{u.name}</h4>
-                <h6>{u.email}</h6>   
+                <h4>name: {u.name}</h4>
+                <h6>email: {u.email}</h6>   
             </p>
           </li>
         ))}
